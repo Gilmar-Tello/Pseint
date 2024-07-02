@@ -1,0 +1,26 @@
+Proceso MultiplicacionPrecisa
+    // Declarar variables
+    Definir n, contador Como Entero
+    Definir numero Como Real
+    Definir producto Como Real
+    
+    // Pedir al usuario que ingrese la cantidad de números
+    Escribir "Ingrese la cantidad de números a multiplicar: "
+    Leer n
+    
+    // Inicializar el producto como 1.0 y el contador en 1
+    producto <- 1.0
+    contador <- 1
+    
+    // Leer los números y multiplicarlos mientras el contador sea menor o igual a n
+    Mientras contador <= n Hacer
+        Escribir "Ingrese el número ", contador, ": "
+        Leer numero
+        producto <- producto * numero
+        contador <- contador + 1
+    FinMientras
+    
+    
+    // Mostrar el producto
+    Escribir "El producto de los ", n, " números es: ", producto
+FinProceso

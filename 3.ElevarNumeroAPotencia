@@ -1,0 +1,26 @@
+Proceso ElevarNumeroAPotencia
+    // Declarar variables
+    Definir base, exponente, resultado, contador Como Entero
+    
+    // Inicializar variables
+    resultado <- 1
+    contador <- 0
+    
+    // Pedir al usuario que ingrese la base y el exponente
+    Escribir "Ingrese la base: "
+    Leer base
+    Escribir "Ingrese el exponente: "
+    Leer exponente
+    
+    // Iniciar el ciclo para calcular la potencia
+    Mientras contador < exponente Hacer
+        // Multiplicar el resultado por la base
+        resultado <- resultado * base
+        
+        // Incrementar el contador
+        contador <- contador + 1
+    FinMientras
+    
+    // Mostrar el resultado
+    Escribir "El resultado de ", base, " elevado a la potencia de ", exponente, " es: ", resultado
+FinProceso

@@ -1,0 +1,24 @@
+Proceso SumaDiezNumeros
+    // Declarar variables
+    Definir numero, suma, contador Como Entero
+    
+    // Inicializar variables
+    suma <- 0
+    contador <- 0
+    
+    // Iniciar el ciclo para leer 10 números
+    Mientras contador < 10 Hacer
+        // Pedir al usuario que ingrese un número
+        Escribir "Ingrese un número: "
+        Leer numero
+        
+        // Sumar el número ingresado
+        suma <- suma + numero
+        
+        // Incrementar el contador
+        contador <- contador + 1
+    FinMientras
+    
+    // Mostrar resultado
+    Escribir "La suma de los diez números es: ", suma
+FinProceso

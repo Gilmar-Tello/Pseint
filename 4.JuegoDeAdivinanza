@@ -1,0 +1,44 @@
+Proceso JuegoDeAdivinanza
+    // Declarar variables
+    Definir respuesta Como Caracter
+    Definir correctoNivel1, correctoNivel2, correctoNivel3 Como Logico
+    
+    // Inicializar variables de control
+    correctoNivel1 <- Falso
+    correctoNivel2 <- Falso
+    correctoNivel3 <- Falso
+    
+    // Nivel 1
+    Escribir "Nivel 1: ¿Qué tiene 4 patas y un respaldo?"
+    Leer respuesta
+    Si respuesta = "silla" Entonces
+        correctoNivel1 <- Verdadero
+    Sino
+        Escribir "Fin del juego"
+FinSi
+
+// Nivel 2
+Si correctoNivel1 = Verdadero Entonces
+	Escribir "Nivel 2: Soy más ligero que una pluma, pero el hombre más fuerte no puede sostenerme por mucho tiempo. ¿Qué soy?"
+	Leer respuesta
+	Si respuesta = "respiracion" Entonces
+		correctoNivel2 <- Verdadero
+	Sino
+		Escribir "Fin del juego"
+FinSi
+FinSi
+
+// Nivel 3
+Si correctoNivel2 = Verdadero Entonces
+	Escribir "Nivel 3: Cuanto más quitas, más grande se vuelve. ¿Qué es?"
+	Leer respuesta
+	Si respuesta = "agujero" Entonces
+		correctoNivel3 <- Verdadero
+		Escribir "¡Usted ganó!"
+	Sino
+		Escribir "Fin del juego"
+FinSi
+FinSi
+
+// Si se llega hasta aquí, el jugador ha ganado, no se necesita FinProceso adicional
+FinProceso
